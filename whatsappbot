@@ -1657,4 +1657,11 @@ sock.ev.process(async (events) => {
 });
 }
 // Make sure to call startSock function
+// Refresh the application every 15 minutes (900000 milliseconds)
+setInterval(() => {
+    console.log("Refreshing application...");
+    // Add the refresh logic here. For example, you might want to restart certain processes or reinitialize certain states.
+    // This is a placeholder:
+    startSock();
+}, 900000);
 startSock();
